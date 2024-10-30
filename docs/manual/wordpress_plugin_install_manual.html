@@ -1,0 +1,232 @@
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css" id="themecss" />
+</head>
+<body>
+	<div class="header_background">
+		<img src="images/wordpress_plugin_manual_header.png"/>
+	</div>
+	<div class="contentholder">
+		<div class="itemcontainer">
+			<p>
+				<h2>Installation guide for 'cpd-search' plugin</h2>
+			</p>
+			<hr/>
+			<p>This guide is intended for agents / developers who wish to install the cpd-search plugin to their wordpress site and have a working commercial property search facility of either their own properties (current instructions), full UK wide search or a customised search of specific areas for specific property types. see our <a href="https://www.cpd.co.uk/restapi/v1/docs/" target="blank">API docs</a> for more information on customising the plugin.</p>
+			<p>
+				To get a working version of the 'cpd'search' plugin on your wordpress site you will need
+				<ul>
+					<li><b>Working <a href="https://wordpress.org/" target="blank">wordpress website</a></b></li>
+					<li><b>Latest version of the <a target="blank" href="https://wordpress.org/plugins/cpd-search/">cpd-search plugin</a></b></li>
+					<li><b>Valid cpd token - <a href="mailto:support@cpd.co.uk?subject=Token request for CPD Wordpress plugin">contact us</a></b></li>
+					<li><b>Set of .php 'page' files - <a target="blank" href="">download here</a></b></li>
+				</ul>
+			</p>
+			<p>
+				Follow the instructions below
+			</p>
+		</div>
+		<div class="itemcontainer">
+			<h2>
+				Download / Install 'cpd-search' plugin
+			</h2>
+			<p>
+				Two recommended ways to download / install the cpd-search plugin
+			</p>
+			<ol>
+				<li>Go to wp-admin / plugins and 'add new' and add the keyword for 'cpd search'.</li>
+				<li>Download the files directly <a target="blank" href="https://wordpress.org/plugins/cpd-search/">here</a> and install manually.</a></li>
+			</ol>
+			<p>
+				<a target="blank" href="https://wordpress.org/plugins/cpd-search/"><img src="images/plugin_install_screen_1.png"/></a>
+			</p>
+		</div>
+		<div class="itemcontainer">
+			<p>
+				<h2>Get CPD token</h2>
+			</p>
+			<hr/>
+			<p>
+				Download of our <a target="blank" href="https://wordpress.org/plugins/cpd-search/">wordpress plugin</a> is FREE but in order for the plugin to work you will need a token from cpd which will allow connection to our database.
+			</p>
+			<p>
+				We have two subscription levels which will let agents display
+				<ul>
+					<li>FREE - Only the agents own properties (current instructions) see <a target="blank" href="https://www.stuartmelzack.co.uk/selected-properties/">live example</a></li>
+					<li>PAID - A full UK wide search of all properties in our database see <a target="blank" href="http://www.adlers.co.uk/search-properties/">live example</a>. (Note: Other agents contact details are NOT made public). 
+					<p>You will need to register your agency with one of our monthly, quarterly or annual subscription plans. For more details, please <a href="mailto:support@cpd.co.uk?subject=Token request for CPD Wordpress plugin">contact us</a> with more details of your agency, including number of users.</p></li>
+				</ul>
+			</p>
+			<p>
+				
+			</p>
+			<p>
+				To request a token please <a href="mailto:support@cpd.co.uk?subject=Token request for CPD Wordpress plugin">contact us.</a>
+			</p>
+		</div>
+		<div class="itemcontainer">
+			<h2>
+				Configure the plugin / Add token
+			</h2>
+			<p>
+				Usually your token will be emailed to your contact address.
+			</p>
+			<p>
+				Go to the wp-admin settings for the cpd-search-plugin (see screenshot below) then copy and paste the cpd-token into place and save. If configured correctly there should be a message like 'server connection successful'
+			</p>
+			<p>
+				<img src="images/plugin_install_screen_2.png"/>
+			</p>
+		</div>
+				<div class="itemcontainer">
+			<h2>
+				Copy in .php pages & .js files/ Install simple basis theme
+			</h2>
+			<p>
+				There are a set of .php pages and .js files which need to be present in your wordpress site theme for the plugin to work.
+			</p>
+			<p>
+				These files are available in the cpd own theme 'simplebasis' which can be downloaded <a href="">here</a>.
+			</p>
+			<p>
+				You can either copy the pages into your own theme if you have one or use the 'simple basis' theme as a starting point.
+			</p>
+			<p>
+				<img src="images/plugin_install_screen_3.png"/>
+			</p>
+		</div>
+		<div class="itemcontainer">
+			<h2>
+				Create set of pages
+			</h2>
+			<p>
+				For the plugin to work there needs to be set of blank pages created in wp-admin which correspond to the .php pages and .js files detailed previously. Title for the pages are listed below.
+			</p>
+			<ul>
+				<li>Selected properties</li>
+				<li>Search properties</li>
+				<li>Search results</li>
+				<li>Search shortlist</li>
+				<li>Register user</li>
+				<li>Verify user</li>
+				<li>Login user</li>
+				<li>Reset password</li>
+				
+			</ul>
+			<p>
+				<img src="images/plugin_install_screen_4.png"/>
+			</p>
+		</div>
+		<div class="itemcontainer">
+			<h2>
+				Add shortlist widget
+			</h2>
+			<p>
+				Users can add properties to a 'shortlist' which appears in the 'results' view. This can be added as a widget in the wp-admin area. Your theme will need a widget area to be able to add the shortlist to it.
+			</p>
+			<p>
+				The cpd-simplebasis theme comes with a search results page which already includes the widget area.</p>
+			</p>
+			<p>
+				 If you are using your own theme you will need to add the corresponding widget area to your themes functions.php file.
+			</p>
+			<p>
+				<img src="images/plugin_install_screen_5.png"/>
+				<img src="images/plugin_install_screen_6.png"/>
+			</p>
+		</div>
+		<div class="itemcontainer">
+			<h2>
+				Configure email templates
+			</h2>
+			<p>
+				For agents marketing other properties than their own current instructions eg the full database search, the users will need to register so a set of email templates will be needed.
+			</p>
+			<p>
+				Users need to register their contact details to be able to get the full property details. After clicking on 'download shortlist' user will go to the 'register user' page and enter their contact details. The user will be sent an verification email to their registered address which when replied to will send the user to the 'verify-user' wordpress page.
+			</p>
+			<p>
+				The user will also be sent a copy of the properties details which were added to the shortlist.
+			</p>
+			<p>
+				The agent will be sent an email detailing the user activity and properties which where added to the 'shortlist' (We also seem to use the term 'register interest'
+			</p>
+			<p>
+				Currently the email templates are managed by CPD so you will need to <a href="mailto:support@cpd.co.uk">contact us</a> when you are ready and we will send you a set which can be customised with the company logo etc.
+			</p>
+		</div>
+		<div class="itemcontainer">
+			<h2>
+				Add properties to the CPD database
+			</h2>
+			<p>For the search to display results an agent will first need to have properties in our 'commercial property database'.</p>
+			<p>Properties can be added through the <a href="https://www.cpd.co.uk/members-area/">members area</a>. See full <a href="https://www.cpd.co.uk/members/manual/user_guide_add_edit_property.html" target="blank">instructions here</a>. Members area is FREE to use for 'commercial property agents'. This allows you to add, update, search and archive properties being marketed by your agency (current instructions) . You will also be able to register any <a href="https://www.cpd.co.uk/members/manual/cpd_members_area_manual.html#__speciality-criteria" target="blank">current requirements</a> you may have, which will be made available to subscribing agents that may be able to fulfill them .</p>
+		</div>
+		<div class="itemcontainer">
+			<h2>
+				Customise your search
+			</h2>
+			<p>Choose what type of properties or what area you want the search to apply. Agents can display results from all properties or just a selected area.</p>
+			<p>Developers can also see our <a href="https://www.cpd.co.uk/restapi/v1/docs/" target="blank">API documentation</a> to see ways in which agents sites can interface with our Commercial Property Database.</p>
+		</div>
+		<div class="itemcontainer">
+			<h2>FAQ</h2>
+			<hr/>
+			<ul>
+				<li><b>How do I add properties to your database?</b></li>
+				<p><i>You can send your PDF brochures directly to our Data Entry team by e-mail – <a href="mailto:dataentry@cpd.co.uk">dataentry@cpd.co.uk</a></i></p>
+				<p><i>Log in to the CPD <a href="http://www.cpd.co.uk/members-area/" target="blank">'members area'</a> where you can add, manage and market properties to other agents. <a href="http://www.cpd.co.uk/join-now/" target="blank">Register for FREE</a> to add your properties now.</i></p>
+			</ul>
+			<ul>
+				<li><b>What is included in the <a href="http://www.cpd.co.uk/property-database/#subscriptions-levels" target="blank">'FREE subscription'</a>?</b></li>
+				<p><i>Free subscription means that you can log into our database members area and upload your properties which can be seen by other agents. Properties can be edited and status updated / archived at any time. You will get a 'TOKEN' which can be used together with the free cpd-search plugin to display a search of all your own properties which have been added to the database.</i></p>
+			</ul>
+			<ul>
+				<li><b>What is included in the <a href="http://www.cpd.co.uk/property-database/#subscriptions-levels" target="blank">'paid subscription'</a>?</b></li>
+				<p><i>Main benefit of the 'paid subscription' is access to the full contents of our database. Enabling agents to be able to provide a full nationwide property search on their website using the 'cpd search plugin' or searching properties via the cpd 'members area'</i></p>
+			</ul>
+			<ul>
+				<li><b>How do agents contact clients interested in properties?</b></li>
+				<p><i>If using the cpd search plugin for your wordpress site as a FREE subscription user then users who search your website can download PDF copies of your properties details.
+				<p>For agents who are paid subscribers the same applies but with the addition that a search of the entire database can be shown. When a user is interested in a property they will be asked for basic contact details eg email / phone. The agent will have the users contact and also the contact of the agent who is marketing the property.</i></p>
+			</ul>
+			<ul>
+				<li><b>If my search displays 'other agents' properties will users see their contact details?</b></li>
+				<p><i>NO. Search results will not show full details of properties which are not agents own current instructions. The user will get an email with brief details. The agent will be able to contact other agents directly regarding any properties which may match their requirements.</i></p>
+			</ul>
+			<ul>
+				<li><b>How long does it take to install the cpd-search plugin?</b></li>
+				<p><i>If you already have a wordpress site setup then a basic search can be working in under an hour depending on your experience with wordpress.</i></p>
+				<p><i>Once the search is working and hooked up to our database you will most likely want to update the look and feel of the search form and results view to match your existing website. Depending on your web design experience you may want to get help with this part. CPD can offer web design services to integrate the plugin into and existing 'wordpress' website or build a new website including the search plugin. If you need help with the plugin install or any other issues please <a href="mailto:support@cpd.co.uk?subject=Help with CPD Wordpress plugin">contact us</a>.</i></p>
+			</ul>
+			<ul>
+				<li><b>Can I customise the search form / criteria to show for example "ONLY London properties"?</b></li>
+				<p><i>Yes the form can be customised to show different criteria and made to reflect the kind of properties your agency specialises in and 	would like to market.</i></p>
+			</ul>
+			<ul>
+				<li><b>What if I find a bug in the plugin?</b></li>
+				<p><i>Please report it to us at <a href="mailto:support@cpd.co.uk?subject=CPD Wordpress plugin - Bug Report">support@cpd.co.uk</a>. It helps if you can describe the issue and the steps for us to try yto reproduce the issue.</i></p>
+			</ul>
+		</div>
+		<div class="itemcontainer button_holder">
+			<a href="mailto:support@cpd.co.uk?subject=CPD Wordpress plugin">
+				<div label="Support" class="user_manual_link" title="Contact CPD support">
+					<button class="continue">Contact CPD support >></button>
+				</div>
+			</a>
+			<a href="http://occupa.co.uk/search-properties/" target="blank">
+				<div label="LiveExample" class="user_manual_link" title="Contact CPD support">
+					<button class="continue">See live example >></button>
+				</div>
+			</a>
+			<a href="https://www.cpd.co.uk/restapi/v1/docs/" target="blank">
+				<div label="APIDocs" class="user_manual_link" title="View CPD API documentation">
+					<button class="continue">API docs >></button>
+				</div>
+			</a>
+		</div>
+	</div>
+</body>
+</html>
